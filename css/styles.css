@@ -1,5 +1,19 @@
+body {
+  background-color: #55B4BF;
+  color: white;
+}
 
-h1 {
-  color:#006600;
-  float: left;
+.farm-info {
+  background-color: #89C77B;
+  border-style: double;
+  border-width: thick;
+  padding: 10px;
+  border-color: #55B4BF;
+  display: none;
+}
+
+.jumbotron {
+  text-align: center;
+  color: white;
+  background-color: #89C77B;
 }
