@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-3.0.0 (2).js"></script>
     <script src="js/scripts.js"></script>
     <title>Sauvie Island Farms</title>
   </head>
@@ -107,10 +107,17 @@
               </ul>
             </div>
           </div>
-        <img class="col-md-6" id="map" src="img/sauvie.jpg" alt="map of Sauvie Island">
         </div>
-      </div>
-      <div id="searchable">
+        <div class="col-md-6">
+          <div id="searchable">
+            <select class="form-control">
+              <option>none</option>
+              <option>apples</option>
+              <option>oranges</option>
+            </select>
+          </div>
+          <img id="map" src="img/sauvie.jpg" alt="map of Sauvie Island">
+        </div>
       </div>
       <div id="weather">
       </div>
