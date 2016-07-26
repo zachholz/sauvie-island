@@ -17,3 +17,11 @@ body {
   color: white;
   background-color: #89C77B;
 }
+
+img {
+  max-width: 100%;
+}
+
+.forms {
+  padding-bottom: 15px;
+}
