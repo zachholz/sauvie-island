@@ -10,9 +10,7 @@ var sauvieFarmFruit = {fruits: ["oranges"]};
 var sauvieLavenderFruit = {fruits: ["apples"]};
 
 // loop through farm names and find all those that contain fruit: apples
-var farmsWithApples = farms.map(function(name) {
-  this.names.forEach(function(fruit))
-})
+
 
 // user interface
 $(document).ready(function() {
