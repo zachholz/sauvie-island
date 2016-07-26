@@ -1,6 +1,18 @@
-var farms = {
-    names: [columbiaFruit, douglasFruit, krugersFruit, pumpkinFruit, sauvieFarmFruit, sauvieBlueberryFruit, sauvieLavenderFruit]
+//var farms = {
+//    names: [columbiaFruit, douglasFruit, krugersFruit, pumpkinFruit, sauvieFarmFruit, sauvieBlueberryFruit, sauvieLavenderFruit]
+//}
+var farms(name, fruit, activities) = {
+  this.name = name;
+  this.fruit = fruit;
+  this.activities = activities;
 }
+
+$(document).ready(function() {
+  $("div.farm-title").click(function() {
+    $("div.farm-info").toggle();
+  });
+});
+
 var columbiaFruit = {fruits: ["apples", "oranges"]};
 var douglasFruit = {fruits: ["apples", "oranges"]};
 var krugersFruit = {fruits: ["apples", "oranges"]};
@@ -11,8 +23,8 @@ var sauvieLavenderFruit = {fruits: ["apples"]};
 
 // loop through farm names and find all those that contain fruit: apples
 var farmsWithApples = farms.map(function(name) {
-  this.names.forEach(function(fruit))
-})
+  this.names.forEach(function(fruit));
+});
 
 // user interface
 $(document).ready(function() {

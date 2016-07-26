@@ -14,10 +14,10 @@
       <h2>Click on a farm to get more detail.</h2>
       <center>
       <img id="map" src="img/sauvie.jpg" alt="map of Sauvie Island">
-    </center>
+      </center>
     </header>
     <div class="container">
-      <div class="row">
+      <div id="weather">
         <h5> Today's Weather! </h5>
         <!--weather widget -->
         <a href="http://www.accuweather.com/en/us/portland-or/97209/weather-forecast/350473"
@@ -35,6 +35,8 @@
           <script type="text/javascript"
           src="http://oap.accuweather.com/launch.js"></script>
           <!--end weather widget -->
+      </div>
+      <div class="row">
         <div class="col-md-6" id="farm-list">
           <div id="columbia">
             <h2 class="farm-title">Columbia Farms U-Pick</h2>
@@ -63,7 +65,7 @@
           </div>
           <div id="douglas">
             <h2 class="farm-title">Douglas Farm</h2>
-              <div class="farm-info" id="douglas-info">
+            <div class="farm-info" id="douglas-info">
               <img src="img/douglas.jpg" class="farm-image" alt="picture of the farm">
               <h4 class="address">15330 NW Sauvie Island Rd. Sauvie Island, OR 97231</h4>
               <h4 class="phone">503-621-3177</h4>
@@ -163,22 +165,18 @@
               </ul>
             </div>
           </div>
-        <div class="col-md-6">
-          <div class="forms">
-            <form id="searchable">
-              <select class="form-control" id="fruit-selected">
-                <option>none</option>
-                <option>apples</option>
-                <option>oranges</option>
-              </select>
-              <button type="submit" class="btn btn-danger" id="fruit-submit">Submit</button>
-            </form>
-          </div>
-          <img id="map" src="img/sauvie.jpg" alt="map of Sauvie Island">
         </div>
-      </div>
-
-      <div id="fruit schedule">
+        <div class="forms col-md-6">
+          <form id="searchable">
+            <select class="form-control" id="fruit-selected">
+              <option>none</option>
+              <option>apples</option>
+              <option>oranges</option>
+            </select>
+            <button type="submit" class="btn btn-danger" id="fruit-submit">Submit</button>
+          </form>
+          <img id="fruit-schedule" src="img/fruit schedule.png" alt="Seasonality Chart">
+        </div>
       </div>
     </div>
   </body>
