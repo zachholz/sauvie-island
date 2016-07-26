@@ -25,3 +25,27 @@ img {
 .forms {
   padding-bottom: 15px;
 }
+
+.col-md-8 {
+  float: right;
+}
+
+#awcc1469496160736 {
+  width: 350px;
+  height: 250px;
+}
+
+#weather {
+  float: right;
+}
+
+#head {
+  width: 1000px;
+  height: 500px;
+}
+
+#map {
+  float: right;
+  height: 200px;
+  width: 500px;
+}

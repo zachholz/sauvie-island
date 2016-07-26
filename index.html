@@ -10,16 +10,22 @@
   </head>
   <body>
     <header class="jumbotron">
-      <h1>Welcome to Sauvie Island Farms</h1>
-      <h2>Click on a farm to get more detail.</h2>
+      <h1>Welcome to Sauvie Island Farms!</h1>
+      <h2>Click on a farm to get more details</h2>
       <center>
-      <img id="map" src="img/sauvie.jpg" alt="map of Sauvie Island">
+      <img id="head" src="img/sauvie1.jpg" alt="map of Sauvie Island">
     </center>
     </header>
     <div class="container">
+      <h3> Welcome to the interactive website for your favorite island west of Portland, OR! </h3>
+      <h4> 45.7054° N, 122.8131° W // The Great PNW </h4>
+
       <div class="row">
-        <h5> Today's Weather! </h5>
-        <!--weather widget -->
+          <!--weather widget -->
+        <div id="weather">
+        <h4> Today's Weather! </h4>
+
+
         <a href="http://www.accuweather.com/en/us/portland-or/97209/weather-forecast/350473"
         class="aw-widget-legal">
           <!--
@@ -34,6 +40,7 @@
           data-useip="false" data-uid="awcc1469496160736"></div>
           <script type="text/javascript"
           src="http://oap.accuweather.com/launch.js"></script>
+        </div>
           <!--end weather widget -->
         <div class="col-md-6" id="farm-list">
           <div id="columbia">
@@ -157,27 +164,40 @@
               <h4 class="address">15140 NW Burlington Ct, Portland, OR 97231</h4>
               <h4 class="phone">(503) 621-3332</h4>
               <h4 class="hours">m-f 8am-6pm</h4>
-              <h4 class="website">http://www.tricountyfarm.org/farms/sauvie-island-blueberry-farm</h4>
               <ul class="produce-offered">
                 <li>Blueberries!</li>
               </ul>
             </div>
           </div>
-        <div class="col-md-6">
+          <br>
+          <br>
+          <center>
+          <img id="map" src="img/sauvie.jpg" alt="map of Sauvie Island">
+        </center>
+        <br>
+        <br>
+        <div class="col-md-8">
           <div class="forms">
+            <h4> What's in Season & Where? </h4>
             <form id="searchable">
               <select class="form-control" id="fruit-selected">
-                <option>none</option>
+                <option>Pears</option>
                 <option>apples</option>
                 <option>oranges</option>
+                <option> marionberries</option>
+                <option> blackberries </option>
+                <option> Organic Produce</option>
+                <option> blueberries </option>
+                <option> Pumpkins! </option>
+                <option> peaches</option>
               </select>
+              <br>
               <button type="submit" class="btn btn-danger" id="fruit-submit">Submit</button>
             </form>
           </div>
-          <img id="map" src="img/sauvie.jpg" alt="map of Sauvie Island">
+
         </div>
       </div>
-
       <div id="fruit schedule">
       </div>
     </div>
