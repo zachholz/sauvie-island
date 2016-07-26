@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-3.0.0 (2).js"></script>
     <script src="js/scripts.js"></script>
     <title>Sauvie Island Farms</title>
   </head>
@@ -18,6 +18,23 @@
     </header>
     <div class="container">
       <div class="row">
+        <h5> Today's Weather! </h5>
+        <!--weather widget -->
+        <a href="http://www.accuweather.com/en/us/portland-or/97209/weather-forecast/350473"
+        class="aw-widget-legal">
+          <!--
+          By accessing and/or using this code snippet, you agree to AccuWeather’s terms
+          and conditions (in English) which can be found at
+          http://www.accuweather.com/en/free-weather-widgets/terms
+          and AccuWeather’s Privacy Statement (in English) which can be found at
+          http://www.accuweather.com/en/privacy.
+          -->
+          </a><div id="awcc1469496160736" class="aw-widget-current"
+          data-locationkey="350473" data-unit="f" data-language="en-us"
+          data-useip="false" data-uid="awcc1469496160736"></div>
+          <script type="text/javascript"
+          src="http://oap.accuweather.com/launch.js"></script>
+          <!--end weather widget -->
         <div class="col-md-6" id="farm-list">
           <div id="columbia">
             <h2 class="farm-title">Columbia Farms U-Pick</h2>
@@ -47,7 +64,7 @@
           <div id="douglas">
             <h2 class="farm-title">Douglas Farm</h2>
               <div class="farm-info" id="douglas-info">
-              <img src="pic" class="farm-image" alt="picture of the farm">
+              <img src="img/douglas.jpg" class="farm-image" alt="picture of the farm">
               <h4 class="address">15330 NW Sauvie Island Rd. Sauvie Island, OR 97231</h4>
               <h4 class="phone">503-621-3177</h4>
               <h4 class="hours">Monday to Saturday 9am - 6pm, Sunday 10am - 5pm</h4>
@@ -68,7 +85,7 @@
           <div id="kruger">
             <h2 class="farm-title">Kruger's Farm Market</h2>
             <div class="farm-info" id="kruger-info">
-              <img src="img/kruger.jpg" class="farm-info" alt="picture of the farm">
+              <img src="img/kruger.jpg" class="farm-image" alt="picture of the farm">
               <h4 class="address">17100 NW Sauvie Island Rd, Portland, OR 97231</h4>
               <h4 class="phone">(503) 621-3489</h4>
               <h4 class="hours">9am-8pm</h4>
@@ -87,7 +104,7 @@
           <div id="pumpkin-patch">
             <h2 class="farm-title">The Pumpkin Patch & The Maize</h2>
             <div class="farm-info" id="pumpkin-patch-info">
-              <img src="pic" class="farm-image" alt="picture of the farm">
+              <img src="img/pumpkin.jpg" class="farm-image" alt="picture of the farm">
               <h4 class="address">16511 NW Gillihan Rd, Portland, OR 97231</h4>
               <h4 class="phone">503.621.7110 , 503.621.3874</h4>
               <h4 class="hours">Open daily 10am to 6pm</h4>
@@ -149,9 +166,6 @@
 
         </div>
       </div>
-      <div id="searchable">
-      </div>
-      <a href="http://www.accuweather.com/en/us/new-york-ny/10007/weather-forecast/349727" class="aw-widget-legal">
 
       <div id="fruit schedule">
       </div>
