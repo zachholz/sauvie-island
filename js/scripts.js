@@ -1,6 +1,9 @@
+
 var farms = {
     names: [columbiaFruit, douglasFruit, krugersFruit, pumpkinFruit, sauvieFarmFruit, sauvieBlueberryFruit, sauvieLavenderFruit]
 }
+
+
 var columbiaFruit = {fruits: ["apples", "oranges"]};
 var douglasFruit = {fruits: ["apples", "oranges"]};
 var krugersFruit = {fruits: ["apples", "oranges"]};
@@ -26,6 +29,6 @@ $(document).ready(function() {
 
   // opens farm info (bug: for all farms)
   $(".farm-title").click(function() {
-    $(".farm-info").toggle();
-  });
+    $(this).next('.farm-info').toggle();
+});
 });
