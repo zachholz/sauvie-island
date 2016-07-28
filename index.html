@@ -13,6 +13,7 @@
       <h1>Welcome to Sauvie Island Farms!</h1>
       <h2>Click on a farm to get more details</h2>
       <center>
+<<<<<<< HEAD
       <img id="head" src="img/sauvie1.jpg" alt="map of Sauvie Island">
     </center>
     </header>
@@ -26,6 +27,15 @@
         <h4> Today's Weather! </h4>
 
 
+=======
+      <img id="map" src="img/sauvie.jpg" alt="map of Sauvie Island">
+      </center>
+    </header>
+    <div class="container">
+      <div id="weather">
+        <h5> Today's Weather! </h5>
+        <!--weather widget -->
+>>>>>>> 6413454208ace2a2e7f4206cc3af3db7063aacb9
         <a href="http://www.accuweather.com/en/us/portland-or/97209/weather-forecast/350473"
         class="aw-widget-legal">
           <!--
@@ -42,6 +52,8 @@
           src="http://oap.accuweather.com/launch.js"></script>
         </div>
           <!--end weather widget -->
+      </div>
+      <div class="row">
         <div class="col-md-6" id="farm-list">
           <div id="columbia">
             <h2 class="farm-title">Columbia Farms U-Pick</h2>
@@ -53,7 +65,6 @@
               <h4 class="hours">Tuesday-Sunday 9am-5pm, Closed: Monday</h4>
               <h4 class="website">http://www.columbiafarmsu-pick.com/</h4>
               <ul class="produce-offered">
-                <li>fruits offered</li>
                 <li>Strawberries </li>
                 <li>raspberries</li>
                 <li>blueberries</li>
@@ -65,12 +76,11 @@
                 <li> U-pick </li>
                 <li> sustainable farming</li>
               </ul>
-
             </div>
           </div>
           <div id="douglas">
             <h2 class="farm-title">Douglas Farm</h2>
-              <div class="farm-info" id="douglas-info">
+            <div class="farm-info" id="douglas-info">
               <img src="img/douglas.jpg" class="farm-image" alt="picture of the farm">
               <h4 class="address">15330 NW Sauvie Island Rd. Sauvie Island, OR 97231</h4>
               <h4 class="phone">503-621-3177</h4>
@@ -98,11 +108,9 @@
               <h4 class="hours">9am-8pm</h4>
               <h4 class="website">http://www.krugersfarmmarket.com/</h4>
               <ul class="produce-offered">
-                <li>blueberries</li>
+                <li> blueberries</li>
                 <li> boysenberries</li>
                 <li> raspberries </li>
-                <li> lettuce </li>
-                <li> squash </li>
                 <li> marionberries </li>
                 <li> They also offer Farm-to-Table dinners! </li>
               </ul>
@@ -144,7 +152,7 @@
               <h4 class="hours">wed-sat 8-7pm</h4>
               <h4 class="website">http://www.sauvieislandfarms.com/</h4>
               <ul class="produce-offered">
-                <li>kale</li>
+                <li> kale</li>
                 <li> beets </li>
                 <li> fresh flowers </li>
                 <li> corn </li>
@@ -169,6 +177,7 @@
               </ul>
             </div>
           </div>
+
           <br>
           <br>
           <center>
@@ -199,6 +208,20 @@
         </div>
       </div>
       <div id="fruit schedule">
+
+        </div>
+        <div class="forms col-md-6">
+          <form id="searchable">
+            <select class="form-control" id="fruit-selected">
+              <option>none</option>
+              <option>apples</option>
+              <option>oranges</option>
+            </select>
+            <button type="submit" class="btn btn-danger" id="fruit-submit">Submit</button>
+          </form>
+          <img id="fruit-schedule" src="img/fruit schedule.png" alt="Seasonality Chart">
+        </div>
+            6413454208ace2a2e7f4206cc3af3db7063aacb9
       </div>
     </div>
   </body>
